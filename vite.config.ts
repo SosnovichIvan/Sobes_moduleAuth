@@ -10,12 +10,12 @@ export default defineConfig({
       name: "auth",
       filename: "remoteEntry.js",
       remotes: {
-        hostApp: "http://localhost:3001/assets/remoteEntry.js",
+        host: "http://localhost:3001/assets/remoteEntry.js",
       },
       exposes: {
-        "./App": "./src/app/ui/index",
+        "./App": "./src/app/ui/module/ui/index.tsx",
       },
-      shared: ["react", "react-dom"],
+      shared: ["react", "react-dom", "react-router-dom", "zustand"],
     }),
   ],
   build: {

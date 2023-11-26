@@ -1,9 +1,11 @@
+import Layout from "host/Layout";
+import AppModule from "./module";
 
 const App = () => {
   return (
-    <div>
-      Автроризация
-    </div>
+		<Layout path="/auth">
+			<AppModule />
+		</Layout>
   );
 };
 
